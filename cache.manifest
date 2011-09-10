@@ -1,0 +1,19 @@
+CACHE MANIFEST
+index.html
+js/cpython.js
+js/python.js
+js/ace.js
+js/theme-textmate.js
+js/mode-python.js
+js/jquery-1.6.2.min.js
+js/jquery.clickmenu.js
+js/tutorial.js
+css/clickmenu.css
+css/style.css
+img/run.png
+img/run_pushed.png
+img/undo.png
+img/undo_pushed.png
+img/redo.png
+img/redo_pushed.png
+img/document.png

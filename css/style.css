@@ -1,0 +1,251 @@
+body {
+	overflow: hidden;
+}
+
+/*
+ * Control Bar
+ */
+
+#control {
+	position: absolute;
+	height: 47px;
+	top: 24px;
+	left: 0;
+	right: 0;
+	background-color: #b9b9b9;
+	background-image: -webkit-linear-gradient(top, #dcdcdc 0%, #b9b9b9 100%);
+	background-image: -moz-linear-gradient(top, #dcdcdc 0%, #b9b9b9 100%);
+	border-bottom: 1px #777 solid;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	font-family: "Lucida Grande", Helvetica, Arial;
+	font-size: 12px;
+	color: #222;
+}
+
+#control-run {
+	position: absolute;
+	top: 8px;
+	left: 9px;
+	background-image: url('../img/run.png');
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 60px;
+	line-height: 32px;
+	text-align: right;
+	cursor: pointer;
+	float: left;
+	/*border:1px red solid;*/
+}
+
+#control-undo {
+	position: absolute;
+	top: 8px;
+	left: 90px;
+	background-image: url('../img/undo.png');
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 68px;
+	line-height: 32px;
+	text-align: right;
+	cursor: pointer;
+	float: left;
+	/*border:1px red solid;*/
+}
+
+#control-redo {
+	position: absolute;
+	top: 8px;
+	left: 171px;
+	background-image: url('../img/redo.png');
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 66px;
+	line-height: 32px;
+	text-align: right;
+	cursor: pointer;
+	float: left;
+	/*border:1px red solid;*/
+}
+
+#control-run.pushed {
+	background-image: url('../img/run_pushed.png') !important;
+}
+
+#control-undo.pushed {
+	background-image: url('../img/undo_pushed.png') !important;
+}
+
+#control-redo.pushed {
+	background-image: url('../img/redo_pushed.png') !important;
+}
+/*
+ * File Browser
+ */
+
+#browser {
+	position: absolute;
+	top: 72px;
+	bottom: 0;
+	left: 0;
+	width: 199px;
+	background-color: #d1d9e1;
+	background-image: -webkit-linear-gradient(top, #e7ebf1 0%, #d1d9e1 100%);
+	background-image: -moz-linear-gradient(top, #e7ebf1 0%, #d1d9e1 100%);
+	border-right: 1px #999 solid;
+	font-family: "Lucida Grande", Helvetica, Arial;
+	font-size: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+#browser ul {
+	list-style: none;
+	margin: 0;
+	padding: 4px 0 0;
+}
+
+#browser li {
+	padding: 3px 0 3px 10px;
+	cursor: pointer;
+}
+
+#browser li.selected {
+	background-color: #8094bb;
+	background-image: -webkit-linear-gradient(top, #abbad7 0%, #8094bb 100%);
+	background-image: -moz-linear-gradient(top, #abbad7 0%, #8094bb 100%);
+	color: white;
+}
+
+#browser li img {
+	vertical-align:text-bottom;
+}
+
+#browser a {
+	text-decoration: none;
+	color: black;
+}
+
+/*
+ * Editor
+ */
+
+#editor { 
+	margin: 0;
+	position: absolute;
+	top: 72px;
+	bottom: 200px;
+	left: 200px;
+	right: 0;
+}
+
+#editor.textarea { 
+	font-family: Monaco, "Menlo", "Courier New", monospace;
+	font-size: 12px;
+	border: 0;
+}
+
+/*
+ * Guide
+ */
+
+#guide-outer {
+	position: absolute;
+	/*background-color: #e9ecf1;*/
+	background-color: #e8e8e8;
+	top: 72px;
+	bottom: 200px;
+	right: 0;
+	width: 299px;
+	border-left: 1px #999 solid;
+	display: none;
+}
+
+#guide {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 4px 6px;
+	font-family: "Lucida Grande", Helvetica, Arial;
+	font-size: 13px;
+	overflow: auto;
+}
+
+#guide code {
+	border: 1px #ccc solid;
+	padding: 0 .2em;
+	background-color: #ebebeb;
+}
+
+#guide a {
+	text-decoration: none;
+}
+
+#guide a:hover {
+	text-decoration: underline;
+}
+
+/*
+ * Console
+ */
+
+#console-outer {
+	position: absolute;
+	height: 199px;
+	bottom: 0;
+	left: 200px;
+	right: 0;
+	border-top: 1px #999 solid;
+}
+
+#console-control {
+	position: absolute;
+	height: 20px;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px #999 solid;
+	background-color: #d1d1d1;
+	background-image: -webkit-linear-gradient(top, #eaeaea 0%, #d1d1d1 100%);
+	background-image: -moz-linear-gradient(top, #eaeaea 0%, #d1d1d1 100%);
+	text-align: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+#console-clear-button {
+	position: absolute;
+	top: 2px;
+	right: 4px;
+	border: 1px #aaa solid;
+	border-radius: 12px;
+	background-color: #e3e3e3;
+	background-image: -webkit-linear-gradient(top, #f9f9f9 0%, #e3e3e3 100%);
+	background-image: -moz-linear-gradient(top, #f9f9f9 0%, #e3e3e3 100%);
+	padding: 1px 9px;
+	margin: 0;
+	font-family: "Lucida Grande", Helvetica, Arial;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+#console {
+	position: absolute;
+	top: 21px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 4px 6px;
+	
+	font-family: Monaco, "Menlo", "Courier New", monospace;
+	font-size: 12px;
+	color: black;
+	overflow: scroll;
+}
