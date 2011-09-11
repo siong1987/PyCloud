@@ -8,6 +8,7 @@ js/mode-python.js
 js/jquery-1.6.2.min.js
 js/jquery.clickmenu.js
 js/tutorial.js
+js/pycloud.js
 css/clickmenu.css
 css/style.css
 img/run.png

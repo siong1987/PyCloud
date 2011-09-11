@@ -36,7 +36,6 @@ body {
 	text-align: right;
 	cursor: pointer;
 	float: left;
-	/*border:1px red solid;*/
 }
 
 #control-undo {
@@ -51,7 +50,6 @@ body {
 	text-align: right;
 	cursor: pointer;
 	float: left;
-	/*border:1px red solid;*/
 }
 
 #control-redo {
@@ -66,7 +64,6 @@ body {
 	text-align: right;
 	cursor: pointer;
 	float: left;
-	/*border:1px red solid;*/
 }
 
 #control-run.pushed {
@@ -153,7 +150,6 @@ body {
 
 #guide-outer {
 	position: absolute;
-	/*background-color: #e9ecf1;*/
 	background-color: #e8e8e8;
 	top: 72px;
 	bottom: 200px;
@@ -241,9 +237,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-
 	padding: 4px 6px;
-	
 	font-family: Monaco, "Menlo", "Courier New", monospace;
 	font-size: 12px;
 	color: black;

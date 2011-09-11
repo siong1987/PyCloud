@@ -9,7 +9,7 @@ var lessons = [
 					 "In the first lesson, let's get familiar with the user interface. Click the Run button and see the output in the console below.",
 			callback: "(function(source, output) {return true;});",
 			right: "Good job!",
-			wrong: "Oops! Look like something is wrong. Try again.",
+			wrong: "",
 			next: "Lesson 2",
 		}
 	},
@@ -25,7 +25,7 @@ var lessons = [
 					"Now, we will show you a little more complicated code. You probably already know what this code does. Let's click Run to see the output.",
 			callback: "(function(source, output) {return true;});",
 			right: "Good job!",
-			wrong: "Oops! Look like something is wrong. Try again.",
+			wrong: "",
 			next: "Lesson 3",
 		}
 	},
@@ -40,7 +40,7 @@ var lessons = [
 					 "Now, let's try something cool. Click Run to see the output.",
 			callback: "(function(source, output) {return true;});",
 			right: "A pyramid! You can try changing variable <code>n</code> and see how the output changes.",
-			wrong: "Oops! Look like something is wrong. Try again",
+			wrong: "",
 			next: "Lesson 4"
 		}
 	},
@@ -54,7 +54,7 @@ var lessons = [
 					 "You can get an input from the user with the <code>raw_input</code> function. In this example, we've created a simple program that takes two numbers and add them up. Click Run to try.",
 			callback: "(function(source, output) {return true;});",
 			right: "Good job!",
-			wrong: "Oops! Look like something is wrong. Try again",
+			wrong: "",
 			next: "Lesson 5"
 		}
 	},
@@ -91,7 +91,7 @@ var lessons = [
 					"What's better way to show it rather than trying it yourself? Let's try disconnecting an internet connection and then click Run.",
 			callback: "(function(source, output) {return true;});",
 			right: "Good job! If you are using Chrome or Safari, you can close the browser, open it again, and type in the URL of PyCloud (yes, even if you are offline). And it still works!",
-			wrong: "Good job! Now, try to make it run.",
+			wrong: "",
 			next: "Lesson 7"
 		}
 	},
@@ -135,7 +135,7 @@ var lessons = [
 					 "That's all for the lessons! You can explore other features of PyCloud by yourself. Enjoy!",
 			callback: "(function(source, output) {return true;});",
 			right: "",
-			wrong: "Oops! Look like something is wrong. Try again"
+			wrong: ""
 		}
 	},
 ];

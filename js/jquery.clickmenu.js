@@ -460,8 +460,6 @@
 				$(outer).css('position', 'absolute');
 			}
 			//add the boxes
-			//$(this).addClass('innerBox').wrap(outer).
-			//		before('<div class="shadowbox1"></div><div class="shadowbox2"></div><div class="shadowbox3"></div>');
 			$(this).addClass('innerBox').wrap(outer);
 	    });
 	};
